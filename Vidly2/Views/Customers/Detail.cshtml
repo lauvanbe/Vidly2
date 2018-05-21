@@ -6,3 +6,18 @@
 
 <h2>@Model.Name</h2>
 
+
+<ul>
+    <li>@Model.MembershipType.Name</li>
+    @if (Model.BirthDate == 0)
+    {
+        <li>No BirthDate known</li>
+    }
+    else
+    {
+        <li>@Model.BirthDate</li>
+    }
+
+</ul>
+
+
